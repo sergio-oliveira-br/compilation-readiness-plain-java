@@ -1,0 +1,108 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----< [0;36mcom.github.sergiooliveirabr:compilation-readiness-plain-java[0;1m >----[m
+[[1;34mINFO[m] [1mBuilding compilation-readiness-plain-java 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mnative-maven-plugin:0.10.2:compile[m [1m(default-cli)[0;1m > [0;1mpackage[m @ [36mcompilation-readiness-plain-java[0;1m >>>[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mcompilation-readiness-plain-java[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/ubuntu/compilation-readiness-plain-java/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mcompilation-readiness-plain-java[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /home/ubuntu/compilation-readiness-plain-java/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mcompilation-readiness-plain-java[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/ubuntu/compilation-readiness-plain-java/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mcompilation-readiness-plain-java[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mcompilation-readiness-plain-java[0;1m ---[m
+[[1;34mINFO[m] No tests to run.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36mcompilation-readiness-plain-java[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/ubuntu/compilation-readiness-plain-java/target/compilation-readiness-plain-java-1.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mnative-maven-plugin:0.10.2:compile[m [1m(default-cli)[0;1m < [0;1mpackage[m @ [36mcompilation-readiness-plain-java[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mnative-maven-plugin:0.10.2:compile[m [1m(default-cli)[m @ [36mcompilation-readiness-plain-java[0;1m ---[m
+[[1;34mINFO[m] Found GraalVM installation from JAVA_HOME variable.
+[[1;34mINFO[m] Downloaded GraalVM reachability metadata repository from file:/home/ubuntu/.m2/repository/org/graalvm/buildtools/graalvm-reachability-metadata/0.10.2/graalvm-reachability-metadata-0.10.2-repository.zip
+[[1;34mINFO[m] Executing: /home/ubuntu/.sdkman/candidates/java/21.0.11-graal/bin/native-image -cp /home/ubuntu/compilation-readiness-plain-java/target/classes --no-fallback -o /home/ubuntu/compilation-readiness-plain-java/target/compilation-readiness-plain-java com.github.sergiooliveirabr.Main
+========================================================================================================================
+GraalVM Native Image: Generating 'compilation-readiness-plain-java' (executable)...
+========================================================================================================================
+For detailed information and explanations on the build output, visit:
+https://github.com/oracle/graal/blob/master/docs/reference-manual/native-image/BuildOutput.md
+------------------------------------------------------------------------------------------------------------------------
+[1/8] Initializing...                                                                                    (6.2s @ 0.09GB)
+ Java version: 21.0.11+9-LTS, vendor version: Oracle GraalVM 21.0.11+9.1
+ Graal compiler: optimization level: 2, target machine: x86-64-v3, PGO: ML-inferred
+ C compiler: gcc (linux, x86_64, 13.3.0)
+ Garbage collector: Serial GC (max heap size: 80% of RAM)
+ 1 user-specific feature(s):
+ - com.oracle.svm.thirdparty.gson.GsonFeature
+------------------------------------------------------------------------------------------------------------------------
+Build resources:
+ - 9.27GB of memory (60.1% of 15.42GB system memory, determined at start)
+ - 4 thread(s) (100.0% of 4 available processor(s), determined at start)
+[2/8] Performing analysis...  [*****]                                                                   (15.6s @ 0.19GB)
+    2,100 reachable types   (60.5% of    3,472 total)
+    1,960 reachable fields  (45.4% of    4,319 total)
+    8,898 reachable methods (36.2% of   24,580 total)
+      746 types,    37 fields, and   288 methods registered for reflection
+       49 types,    33 fields, and    48 methods registered for JNI access
+        4 native libraries: dl, pthread, rt, z
+[3/8] Building universe...                                                                               (2.2s @ 0.21GB)
+[4/8] Parsing methods...      [***]                                                                      (5.4s @ 0.24GB)
+[5/8] Inlining methods...     [***]                                                                      (2.0s @ 0.25GB)
+[6/8] Compiling methods...    [******]                                                                  (32.6s @ 0.22GB)
+[7/8] Laying out methods...   [*]                                                                        (1.6s @ 0.24GB)
+[8/8] Creating image...       [*]                                                                        (1.6s @ 0.23GB)
+   2.87MB (41.71%) for code area:     3,984 compilation units
+   3.20MB (46.51%) for image heap:   53,637 objects and 29 resources
+ 828.52kB (11.78%) for other data
+   6.87MB in total
+------------------------------------------------------------------------------------------------------------------------
+Top 10 origins of code area:                                Top 10 object types in image heap:
+   1.43MB java.base                                          786.12kB byte[] for code metadata
+   1.15MB svm.jar (Native Image)                             703.63kB byte[] for java.lang.String
+  84.40kB com.oracle.svm.svm_enterprise                      368.70kB java.lang.String
+  42.07kB jdk.proxy2                                         329.87kB java.lang.Class
+  37.68kB jdk.proxy1                                         167.25kB java.util.HashMap$Node
+  30.30kB org.graalvm.nativeimage.base                       114.01kB char[]
+  26.59kB org.graalvm.collections                             82.03kB com.oracle.svm.core.hub.DynamicHubCompanion
+  21.07kB jdk.internal.vm.ci                                  81.73kB java.lang.Object[]
+  16.15kB jdk.internal.vm.compiler                            80.13kB byte[] for reflection metadata
+  11.68kB jdk.proxy3                                          75.88kB java.util.HashMap$Node[]
+  864.00B for 1 more packages                                482.66kB for 531 more object types
+                              Use '-H:+BuildReport' to create a report with more details.
+------------------------------------------------------------------------------------------------------------------------
+Security report:
+ - Binary does not include Java deserialization.
+ - Use '--enable-sbom' to embed a Software Bill of Materials (SBOM) in the binary.
+------------------------------------------------------------------------------------------------------------------------
+Recommendations:
+ G1GC: Use the G1 GC ('--gc=G1') for improved latency and throughput.
+ PGO:  Use Profile-Guided Optimizations ('--pgo') for improved throughput.
+ INIT: Adopt '--strict-image-heap' to prepare for the next GraalVM release.
+ HEAP: Set max heap for improved and more predictable memory usage.
+ CPU:  Enable more CPU features with '-march=native' for improved performance.
+------------------------------------------------------------------------------------------------------------------------
+                        4.1s (5.9% of total time) in 372 GCs | Peak RSS: 0.72GB | CPU load: 3.67
+------------------------------------------------------------------------------------------------------------------------
+Produced artifacts:
+ /home/ubuntu/compilation-readiness-plain-java/target/compilation-readiness-plain-java (executable)
+========================================================================================================================
+Finished generating 'compilation-readiness-plain-java' in 1m 8s.
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  01:11 min
+[[1;34mINFO[m] Finished at: 2026-07-22T22:46:44Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
